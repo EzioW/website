@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "version": "0.0.1",
+  "description": "A website demo based on express server and react library",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EzioW/website.git"
+  },
+  "author": "EzioW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EzioW/website/issues"
+  },
+  "homepage": "https://github.com/EzioW/website#readme",
+  "devDependencies": {
+    "eslint-config-seraph": "^1.0.0",
+    "koa": "^2.11.0"
+  }
+}
