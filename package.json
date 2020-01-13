@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/EzioW/website#readme",
   "devDependencies": {
-    "eslint-config-seraph": "^1.2.0"
+    "eslint-config-seraph": "^1.2.0",
+    "eslint-import-resolver-webpack": "^0.12.1"
   },
   "dependencies": {
     "@babel/core": "^7.7.7",
