@@ -9,5 +9,8 @@ module.exports = {
       },
     },
   },
-  rules: {},
+  rules: {
+    'import/no-extraneous-dependencies': ['off'],
+    'object-curly-newline': ['off'],
+  },
 };
