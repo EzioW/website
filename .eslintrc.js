@@ -1,4 +1,4 @@
-const webpackConfig = require('./webpack/webpack.config.common');
+const webpackConfig = require('./webpack/webpack.common');
 
 module.exports = {
   extends: 'eslint-config-seraph',
