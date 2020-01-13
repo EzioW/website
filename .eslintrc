@@ -1,6 +1,4 @@
 {
   "extends": "eslint-config-seraph",
-  "rules": {
-    "import/no-extraneous-dependencies": ["off"]
-  }
+  "rules": {}
 }
