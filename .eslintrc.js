@@ -11,6 +11,6 @@ module.exports = {
   },
   rules: {
     'import/no-extraneous-dependencies': ['off'],
-    'object-curly-newline': ['off'],
+    'react/jsx-props-no-spreading': ['off'],
   },
 };

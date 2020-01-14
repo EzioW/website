@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const contextPath = process.cwd();
 
 module.exports = {
-  entry: ['./src/views/index.jsx'],
+  entry: ['./src/index.jsx'],
   output: {
     path: path.resolve(contextPath, 'dist'), // string
     // the target directory for all output files
@@ -30,7 +30,9 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.css', '.less'],
     alias: {
+      src: path.resolve(contextPath, 'src'),
       components: path.resolve(contextPath, 'src/components'),
+      views: path.resolve(contextPath, 'src/views'),
     },
   },
   context: contextPath,
