@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./server/dev.js",
-    "build": "rm -rf dist && webpack --config ./webpack/webpack.prod.js"
+    "build": "rm -rf dist && webpack --config ./webpack/webpack.prod.js",
+    "website": "node ./server/prod.js"
   },
   "repository": {
     "type": "git",

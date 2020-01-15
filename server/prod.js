@@ -1,11 +1,12 @@
+const path = require('path');
 const express = require('express');
-const webpack = require('webpack');
-const webpackDevMiddleware = require('webpack-dev-middleware');
-const config = require('../webpack/webpack.config.prod');
 
 const app = express();
-const complier = webpack(config);
 
-app.use(webpackDevMiddleware(complier));
+app.use(express.static('dist'));
+
+app.get('*', (req, res) => {
+  res.sendfile(path.resolve(process.cwd(), 'dist/index.html'));
+});
 
 app.listen(8080);
