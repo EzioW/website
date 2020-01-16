@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { Suspense } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,8 +9,9 @@ import routes from 'src/routes';
 
 export default function App() {
   return (
-    <Router>
-      {/* <nav>
+    <Suspense fallback={<div>loading</div>}>
+      <Router>
+        {/* <nav>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -24,11 +25,12 @@ export default function App() {
         </ul>
       </nav> */}
 
-      <Switch>
-        {routes.map(route => (
-          <Route key={route.path} {...route} />
-        ))}
-      </Switch>
-    </Router>
+        <Switch>
+          {routes.map(route => (
+            <Route key={route.path} {...route} />
+          ))}
+        </Switch>
+      </Router>
+    </Suspense>
   );
 }
