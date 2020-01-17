@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const contextPath = process.cwd();
 
 module.exports = {
-  entry: ['./src/index.jsx'],
+  entry: ['./src/index.tsx'],
   output: {
     path: path.resolve(contextPath, 'dist'), // string
     // the target directory for all output files
@@ -21,14 +21,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
+        test: /\.(j|t)sx?$/,
         loader: 'babel-loader',
       },
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.css', '.less'],
+    extensions: ['.ts', '.tsx', '.js', '.json'],
     alias: {
       src: path.resolve(contextPath, 'src'),
       components: path.resolve(contextPath, 'src/components'),

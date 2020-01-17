@@ -7,7 +7,14 @@
         "corejs": "3"
       }
     ],
-    "@babel/preset-react"
+    "@babel/preset-react",
+    [
+      "@babel/preset-typescript",
+      {
+        // "isTSX": true,
+        // "allExtensions": true
+      }
+    ]
   ],
   "plugins": ["react-hot-loader/babel"]
 }

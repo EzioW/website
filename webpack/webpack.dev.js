@@ -9,5 +9,5 @@ module.exports = merge(
     entry: ['webpack-hot-middleware/client'],
     plugins: [new webpack.HotModuleReplacementPlugin()],
   },
-  commonConfig,
+  commonConfig
 );

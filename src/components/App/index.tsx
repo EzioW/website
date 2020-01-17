@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import * as React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,6 +6,8 @@ import {
   // Link,
 } from 'react-router-dom';
 import routes from 'src/routes';
+
+const { Suspense } = React;
 
 export default function App() {
   return (

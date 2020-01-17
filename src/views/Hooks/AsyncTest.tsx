@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import * as React from 'react';
+
+const { useState } = React;
 
 const fetch = new Promise(resolve => {
   setTimeout(() => {
@@ -9,7 +11,7 @@ const fetch = new Promise(resolve => {
 const AsyncTest = () => {
   const [state, setState] = useState('before');
 
-  fetch.then(result => setState(result));
+  fetch.then((result: string) => setState(result));
 
   return <div>{`current string is ${state}`}</div>;
 };

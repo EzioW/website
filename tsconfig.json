@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "umd",
+    "target": "es6",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "src/*": ["src/*"],
+      "utils/*": ["src/utils"],
+      "components/*": ["src/components/*"]
+    }
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
+}

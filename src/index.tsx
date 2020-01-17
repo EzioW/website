@@ -1,7 +1,7 @@
 import 'react-hot-loader';
 import { hot } from 'react-hot-loader/root';
 import * as React from 'react';
-import ReactDom from 'react-dom';
+import * as ReactDom from 'react-dom';
 import App from 'components/App';
 
 const HotApp = hot(App);
