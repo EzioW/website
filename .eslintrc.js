@@ -13,5 +13,6 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     'import/no-extraneous-dependencies': ['off'],
     'react/jsx-props-no-spreading': ['off'],
+    'object-curly-newline': ['off'],
   },
 };

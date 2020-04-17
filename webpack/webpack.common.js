@@ -24,6 +24,11 @@ module.exports = {
         test: /\.(j|t)sx?$/,
         loader: 'babel-loader',
       },
+      {
+        test: /\.less$/,
+        exclude: /node_modules/,
+        use: ['style-loader', 'css-loader', 'less-loader'],
+      },
     ],
   },
   resolve: {
